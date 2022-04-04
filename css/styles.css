@@ -1,40 +1,46 @@
 :root {
-    --header-color: #757575;
+    --main-color: #757575;
     --first-title-color:#FFFFFF;
     --second-title-color: #212121;
     --first-btn-color: #ffff;
     --accent-color:#2196F3;
 }
 body {
-    font-family: "Open Sans", sans-serif;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
     background-color: #ffff;
-    color: #757575;
+    color: var(--main-color);
 }
-
 .list {
     list-style: none;
  }
-
 .link {
     text-decoration: none;
  }
-
  /* -------------------header--------------------- */
 /* header-nav */
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+border: none;
 color: var(--accent-color);
 }
 .header-logo {
     color: #000000;
 }
 /* header-nav-list */ 
+.header-link-active {
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
 .header-link {
 font-weight: 500;
 font-size: 14px;
@@ -47,26 +53,15 @@ color: var(--second-title-color);
     color: var(--accent-color);
 }
 /* header-list */ 
-.header-mail {
+.header-mail, .header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    color: var(--header-color);
+    color: var(--main-color);
 }
-.header-mail:hover,
-.header-mail:focus {
-    color: var(--accent-color);
-}
-.header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em; 
-    color: var(--header-color);
-}
-.header-tel:hover,
-.header-tel:focus {
+.header-mail, .header-tel:hover,
+.header-mail, .header-tel:focus {
     color: var(--accent-color);
 }
 /*-------------------------- шапка----------------------*/ 
@@ -96,6 +91,10 @@ letter-spacing: 0.06em;
 color: var(--first-btn-color);
 background-color: #2196F3;
 }
+.hero-btn:hover {
+   color: #2F303A ; 
+}
+
 /*-------------------------- особенности----------------------*/ 
 .container-title {
     font-weight: 700;
@@ -110,7 +109,7 @@ color: var(--second-title-color);
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: var(--header-color);
+color: var(--main-color);
 }
 /*-------------------------- Чем мы занимаемся----------------------*/ 
 .about-title {
@@ -144,7 +143,7 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--header-color);
+color: var(--main-color);
 }
 /*-------------------------- Портфолио-------------------*/
 .filter-btn-active {
@@ -154,6 +153,7 @@ line-height: 1.62;
 text-align: center;
 cursor: pointer;
 letter-spacing: 0.03em;
+border: none;
 color: var(--first-title-color);
 background-color: var(--accent-color);
 }
@@ -167,12 +167,14 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 cursor: pointer;
+border: none;
 letter-spacing: 0.03em;
 color: var(--second-title-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--first-title-color);
+    background-color: var(--accent-color);
 }  
 /*-------------------------- Проект-------------------*/
 .project-title {
@@ -187,11 +189,11 @@ color: var(--second-title-color);
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: var(--header-color);
+color: var(--main-color);
 }
 /*-------------------------- Подвал----------------------*/
 .footer-logo {
-    color: #000000;
+    color: var(--first-title-color);
 }
 .adress {
     font-weight: 400;
@@ -200,14 +202,7 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--first-title-color);
 }
-.footer-mail {
-    font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-}
-.footer-tel {
+.footer-mail, .footer-tel {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
