@@ -53,15 +53,15 @@ color: var(--second-title-color);
     color: var(--accent-color);
 }
 /* header-list */ 
-.header-mail, .header-tel {
+.header-item-list {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--main-color);
 }
-.header-mail, .header-tel:hover,
-.header-mail, .header-tel:focus {
+.header-item-list:hover,
+.header-item-list:focus {
     color: var(--accent-color);
 }
 /*-------------------------- шапка----------------------*/ 
@@ -202,7 +202,7 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--first-title-color);
 }
-.footer-mail, .footer-tel {
+.footer-adress-item-list {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
