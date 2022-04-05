@@ -92,7 +92,8 @@ color: var(--first-btn-color);
 background-color: #2196F3;
 }
 .hero-btn:hover {
-   color: #2F303A ; 
+    color: var(--first-btn-color);
+  background-color: #188CE8;
 }
 
 /*-------------------------- особенности----------------------*/ 
